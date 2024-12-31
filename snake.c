@@ -5,6 +5,14 @@
 char board[SIZE][SIZE]; // Game board
 char player = 'X';      // Current player
 
+// Function to initialize the game board
+void initializeBoard() {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            board[i][j] = '1' + i * SIZE + j; // Fill board with numbers 1-9
+        }
+    }
+}
 
 
 int main() {
